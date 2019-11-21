@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 400px;
+}
+
+body {
+    font-family: arial, sans-serif;
+    margin: 40px;
+}
+
+header  {
+    text-align: center;
+}
+
+input {
+    height: 50px;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 500px){
+    .item {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .item {
+        width: 100%;
+        margin: 2px 0;
+    }
+}
