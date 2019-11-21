@@ -15,16 +15,16 @@ $html = displayItems($items);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Shopping list</title>
     </head>
-
     <body>
         <header>
             <h1 class="list">Shopping list</h1>
             <a href="addItem.php">Add Item</a>
         </header>
-        <section class="container">
+        <br><br>
+            <section class="container">
 
-    <?php echo $html; ?>
+            <?php echo $html; ?>
 
-        </section>
+            </section>
     </body>
 </html>
