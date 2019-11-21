@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-weight: 400px;
-}
-
 body {
     font-family: arial, sans-serif;
     margin: 40px;
@@ -13,6 +9,13 @@ body {
 
 header  {
     text-align: center;
+    color: #21559B;
+    font-weight: bold;
+}
+
+.list {
+    color: #21559B;
+    font-weight: bold;
 }
 
 input {
@@ -20,6 +23,27 @@ input {
     display: block;
     margin: 20px;
     padding: 20px;
+    color: #21559B;
+    font-weight: bold;
+}
+
+label {
+    color: #21559B;
+    font-weight: bold;
+    margin: 20px;
+}
+
+h1 {
+    height: 40px;
+    color: #21559B;
+    font-weight: bold;
+    margin: 20px;
+}
+
+li {
+    height: 20px;
+    color: #21559B;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 500px){

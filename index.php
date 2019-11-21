@@ -18,7 +18,7 @@ $html = displayItems($items);
 
     <body>
         <header>
-            <h1>Shopping list</h1>
+            <h1 class="list">Shopping list</h1>
             <a href="addItem.php">Add Item</a>
         </header>
         <section class="container">

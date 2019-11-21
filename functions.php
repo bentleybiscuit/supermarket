@@ -19,7 +19,7 @@ function connectDb(): PDO
  */
 function getDatafromDB($db)
 {
-    $query = $db->prepare("SELECT `id`, `item` FROM `list`;");
+    $query = $db->prepare("SELECT `item` FROM `list`;");
     $query->execute();
     $result = $query->fetchAll();
     return $result;
@@ -36,9 +36,7 @@ function displayItems(array $items): string
 
     foreach ($items as $item) {
         if (array_key_exists('item', $item)) {
-            $output .= '<div class= "item">';
-            $output .= '<ul>';
-            $output .= '<li> Item: ' . $org['item'] . '</li>';
+            $output .= '<li>' . $item['item'] . '</li>';
             $output .= '</div>';
         } else {
             $output .= "There was an error displaying the items on the page";
@@ -57,10 +55,7 @@ function displayItems(array $items): string
 function addItems(array $newValues, PDO $db)
 {
     $statement = "INSERT INTO `list` (`item`) VALUES (:item);";
-
     $query = $db->prepare($statement);
-
-
     $query->bindParam(':item', $newValues['item']);
     $query->execute();
 }
