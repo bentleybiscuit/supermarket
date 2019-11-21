@@ -26,7 +26,7 @@ function getDatafromDB($db)
 }
 
 /**
- * @param array $modelOrganisms for each model organism
+ * @param array $items for each item
  *
  * @return div with data points as a list
  */
@@ -46,7 +46,7 @@ function displayItems(array $items): string
 }
 
 /**
- * function to add new item to the collection with binding params
+ * function to add new item to the list with binding params
  *
  * @param array $newValues adds the new values input by user
  *
